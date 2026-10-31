@@ -123,6 +123,15 @@ export async function supabaseReady(): Promise<boolean> {
   } catch { return false; }
 }
 
+export interface ConnectedAccount { id: string; provider: "meta" | "google"; platform: string; label: string; external_id: string; connected_at: string; scopes: string[]; }
+// OAuth tokens live ONLY in server memory in demo mode — a redeploy wipes them.
+// Production must encrypt + store them in Supabase (connected_accounts table, RLS, user-owned).
+export const connectedAccounts: ConnectedAccount[] = [];
+export function baseUrl(req?: Request): string {
+  if (process.env.OAUTH_REDIRECT_BASE) return process.env.OAUTH_REDIRECT_BASE.replace(/\/$/, "");
+  if (req) { const u = new URL(req.url); return `${u.protocol}//${u.host}`; }
+  return "https://mentionhub-ghorowa.vercel.app";
+}
 export function renderTemplate(body: string, m: Mention): string {
   return body.replaceAll("{name}", m.author).replaceAll("{platform}", m.platform).replaceAll("{handle}", m.author_handle);
 }
