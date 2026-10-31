@@ -38,7 +38,7 @@ const services = [
 export default function Pricing() {
   const [yearly, setYearly] = useState(false);
   return (<>
-    <header><div className="wrap"><Link className="logo" href="/">Mention<span>Hub</span></Link><nav style={{display:"flex",gap:10}}><Link className="btn" href="/bn/pricing">বাংলা</Link><Link className="btn" href="/login">Log in</Link><Link className="btn btn-primary" href="/app">Open dashboard</Link></nav></div></header>
+    <header className="pro-header"><div className="wrap"><Link className="logo" href="/">Mention<span>Hub</span></Link><nav className="pro-nav" aria-label="Main"><Link href="/">Home</Link><Link href="/#capabilities">Capabilities</Link><Link href="/connect">Connect</Link><Link className="btn" href="/bn/pricing">বাংলা</Link><Link className="btn btn-primary" href="/app">Open dashboard</Link></nav><details className="menu-mobile"><summary aria-label="Open menu">Menu ☰</summary><div className="menu-panel"><Link href="/">Home</Link><Link href="/#capabilities">Capabilities</Link><Link href="/#platforms">Platforms</Link><Link href="/connect">Connect accounts</Link><Link href="/bn/pricing">বাংলা</Link><Link href="/app">Open dashboard →</Link></div></details></div></header>
     <main className="wrap">
       <section className="hero" style={{paddingBottom:16}}>
         <span className="pill">PRICING • NO HIDDEN FEES</span>

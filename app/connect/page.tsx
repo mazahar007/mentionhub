@@ -10,7 +10,7 @@ export default function ConnectPage() {
   return (
     <main className="container">
       <a className="skip" href="#main">Skip to content</a>
-      <header className="header"><a className="logo" href="/">MentionHub</a><nav><a href="/app">Dashboard</a> <a href="/pricing">Pricing</a></nav></header>
+      <header className="pro-header"><div className="wrap"><a className="logo" href="/">Mention<span>Hub</span></a><nav className="pro-nav" aria-label="Main"><a href="/">Home</a><a href="/pricing">Pricing</a><a className="btn btn-primary" href="/app">Dashboard</a></nav><details className="menu-mobile"><summary aria-label="Open menu">Menu ☰</summary><div className="menu-panel"><a href="/">Home</a><a href="/pricing">Pricing</a><a href="/bn/pricing">বাংলা প্রাইসিং</a><a href="/app">Dashboard →</a></div></details></div></header>
       <section id="main" className="hero">
         <h1>Connect your accounts</h1>
         <p className="lead">Facebook + Instagram connect through one Meta login. YouTube connects through Google. Until the apps are reviewed/verified, only the app owner and test users can connect — that is enough for your own americancarsaga accounts.</p>

@@ -15,7 +15,7 @@ const CAPS: [string, string][] = [
 export default function HomeBN() {
   return (<div className="olly-bg">
     <a className="skip" href="#main">মূল কনটেন্টে যান</a>
-    <header className="pro-header"><div className="wrap"><Link className="logo" href="/bn">Mention<span>Hub</span></Link><nav className="pro-nav"><Link href="#capabilities">ক্যাপাবিলিটি</Link><Link href="#platforms">প্ল্যাটফর্ম</Link><Link href="/bn/pricing">প্রাইসিং</Link><Link href="#faq">প্রশ্ন</Link><Link className="btn" href="/">English</Link><Link className="btn btn-primary" href="/app">ড্যাশবোর্ড খুলুন</Link></nav></div></header>
+    <header className="pro-header"><div className="wrap"><Link className="logo" href="/bn">Mention<span>Hub</span></Link><nav className="pro-nav" aria-label="প্রধান মেনু"><Link href="#capabilities">ক্যাপাবিলিটি</Link><Link href="#platforms">প্ল্যাটফর্ম</Link><Link href="/bn/pricing">প্রাইসিং</Link><Link href="#faq">প্রশ্ন</Link><Link className="btn" href="/">English</Link><Link className="btn btn-primary" href="/app">ড্যাশবোর্ড খুলুন</Link></nav><details className="menu-mobile"><summary aria-label="মেনু খুলুন">মেনু ☰</summary><div className="menu-panel"><Link href="#capabilities">ক্যাপাবিলিটি</Link><Link href="#platforms">প্ল্যাটফর্ম</Link><Link href="/bn/pricing">প্রাইসিং</Link><Link href="#faq">প্রশ্ন</Link><Link href="/connect">অ্যাকাউন্ট কানেক্ট করুন</Link><Link href="/">English</Link><Link href="/app">ড্যাশবোর্ড খুলুন →</Link></div></details></div></header>
     <main id="main">
       <section className="olly-hero"><div className="wrap">
         <div className="pro-eyebrow">ক্রিয়েটরদের জন্য মেনশন ম্যানেজমেন্ট</div>

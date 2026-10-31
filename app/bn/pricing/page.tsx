@@ -35,7 +35,7 @@ const services = [
 export default function PricingBN() {
   const [yearly, setYearly] = useState(false);
   return (<>
-    <header><div className="wrap"><Link className="logo" href="/bn">Mention<span>Hub</span></Link><nav style={{display:"flex",gap:10}}><Link className="btn" href="/pricing">English</Link><Link className="btn" href="/login">লগইন</Link><Link className="btn btn-primary" href="/app">ড্যাশবোর্ড খুলুন</Link></nav></div></header>
+    <header className="pro-header"><div className="wrap"><Link className="logo" href="/bn">Mention<span>Hub</span></Link><nav className="pro-nav" aria-label="প্রধান মেনু"><Link href="/bn">হোম</Link><Link href="/bn#capabilities">ক্যাপাবিলিটি</Link><Link href="/connect">কানেক্ট</Link><Link className="btn" href="/pricing">English</Link><Link className="btn btn-primary" href="/app">ড্যাশবোর্ড খুলুন</Link></nav><details className="menu-mobile"><summary aria-label="মেনু খুলুন">মেনু ☰</summary><div className="menu-panel"><Link href="/bn">হোম</Link><Link href="/bn#capabilities">ক্যাপাবিলিটি</Link><Link href="/bn#platforms">প্ল্যাটফর্ম</Link><Link href="/connect">অ্যাকাউন্ট কানেক্ট করুন</Link><Link href="/pricing">English</Link><Link href="/app">ড্যাশবোর্ড খুলুন →</Link></div></details></div></header>
     <main className="wrap">
       <section className="hero" style={{paddingBottom:16}}>
         <span className="pill">প্রাইসিং • কোনো লুকানো ফি নেই</span>

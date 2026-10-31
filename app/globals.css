@@ -88,7 +88,18 @@ footer{padding:32px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
 .pro-header{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
 .pro-header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;gap:12px}
 .pro-nav{display:flex;gap:18px;align-items:center}
-@media(max-width:700px){.pro-nav a:not(.btn){display:none}}
+@media(max-width:700px){.pro-nav{display:none}}
+/* Mobile menu — a real hamburger, not hidden links. Works without JS (details/summary). */
+.menu-mobile{display:none;position:relative}
+@media(max-width:700px){.menu-mobile{display:block}}
+.menu-mobile summary{list-style:none;cursor:pointer;min-height:46px;display:flex;align-items:center;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-weight:800;font-size:15px}
+.menu-mobile summary::-webkit-details-marker{display:none}
+.menu-mobile[open] summary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.menu-panel{position:absolute;right:0;top:56px;min-width:230px;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:10px;z-index:50;display:flex;flex-direction:column;gap:4px}
+.menu-panel a{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:700;min-height:44px}
+.menu-panel a:hover{background:var(--surface-2)}
+.menu-panel a.btn{justify-content:flex-start}
+section[id]{scroll-margin-top:84px}
 .pro-hero{padding:64px 0 48px;border-bottom:1px solid var(--line)}
 @media(min-width:900px){.pro-hero{padding:84px 0 64px}}
 .pro-eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--teal);text-transform:uppercase}

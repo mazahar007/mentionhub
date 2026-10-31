@@ -15,7 +15,7 @@ const CAPS: [string, string][] = [
 export default function Home() {
   return (<div className="olly-bg">
     <a className="skip" href="#main">Skip to content</a>
-    <header className="pro-header"><div className="wrap"><Link className="logo" href="/">Mention<span>Hub</span></Link><nav className="pro-nav" aria-label="Main"><Link href="#capabilities">Capabilities</Link><Link href="#platforms">Platforms</Link><Link href="/pricing">Pricing</Link><Link href="#faq">FAQ</Link><Link className="btn" href="/bn">বাংলা</Link><Link className="btn btn-primary" href="/app">Open dashboard</Link></nav></div></header>
+    <header className="pro-header"><div className="wrap"><Link className="logo" href="/">Mention<span>Hub</span></Link><nav className="pro-nav" aria-label="Main"><Link href="#capabilities">Capabilities</Link><Link href="#platforms">Platforms</Link><Link href="/pricing">Pricing</Link><Link href="#faq">FAQ</Link><Link className="btn" href="/bn">বাংলা</Link><Link className="btn btn-primary" href="/app">Open dashboard</Link></nav><details className="menu-mobile"><summary aria-label="Open menu">Menu ☰</summary><div className="menu-panel"><Link href="#capabilities">Capabilities</Link><Link href="#platforms">Platforms</Link><Link href="/pricing">Pricing</Link><Link href="#faq">FAQ</Link><Link href="/connect">Connect accounts</Link><Link href="/bn">বাংলা</Link><Link href="/app">Open dashboard →</Link></div></details></div></header>
     <main id="main">
       <section className="olly-hero"><div className="wrap">
         <div className="pro-eyebrow">Mention management for creators</div>
