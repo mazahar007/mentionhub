@@ -51,3 +51,8 @@ npm run dev
 2. Meta OAuth → Facebook Page-এ লাইভ রিপ্লাই
 3. YouTube OAuth → লাইভ রিপ্লাই
 4. Stripe + bKash অটো-বিলিং
+
+## GitHub + Vercel auto-deploy (2026-10-31)
+- GitHub repo: mazahar007/mentionhub (main branch)
+- Vercel project: mentionhub (git-linked) — main-এ push করলেই auto-deploy হবে।
+- পুরনো direct-upload project: mention-manager (mention-manager-ghorowa.vercel.app) — এখনো লাইভ, নতুন project লাইভ হলে এটাই মূল লিংক হবে।
