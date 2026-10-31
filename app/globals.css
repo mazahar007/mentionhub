@@ -81,3 +81,42 @@ footer{padding:32px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
 .eyebrow{font-size:12px;letter-spacing:2.5px;font-weight:800;color:var(--teal);text-transform:uppercase;margin-bottom:10px}
 .mock-stunning{border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(135deg,#14b8a6,#f59e0b) border-box}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+/* Professional redesign (2026-10-31) — corporate, calm, trustworthy.
+   White/light surfaces, ink-navy type, one teal accent, thin borders,
+   generous whitespace. No gradient headline, no flashy mock border.
+   Replaces the v3 "stunning" look on the home pages only; dashboard keeps v2. */
+.pro-header{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.pro-header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;gap:12px}
+.pro-nav{display:flex;gap:18px;align-items:center}
+@media(max-width:700px){.pro-nav a:not(.btn){display:none}}
+.pro-hero{padding:64px 0 48px;border-bottom:1px solid var(--line)}
+@media(min-width:900px){.pro-hero{padding:84px 0 64px}}
+.pro-eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--teal);text-transform:uppercase}
+.pro-hero h1{font-size:clamp(36px,5vw,56px);line-height:1.08;letter-spacing:-1px;margin:14px 0 16px;color:var(--ink)}
+.pro-hero .lead{font-size:19px;max-width:600px}
+.pro-trust{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px;color:var(--muted);font-size:14px;font-weight:600}
+.pro-trust span::before{content:"✓ ";color:var(--teal);font-weight:800}
+.pro-panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-sm);overflow:hidden}
+.pro-panel-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:700;font-size:15px}
+.pro-panel-row{display:flex;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.pro-panel-row:last-child{border-bottom:0}
+.pro-panel-row b{font-size:15px}
+.pro-panel-row span{color:var(--muted);font-size:14px}
+.pro-stats{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);margin-top:0}
+@media(min-width:700px){.pro-stats{grid-template-columns:repeat(4,1fr)}}
+.pro-stat{padding:22px 4px;text-align:left;border-right:1px solid var(--line)}
+.pro-stat:last-child{border-right:0}
+.pro-stat b{font-size:30px;display:block;line-height:1;color:var(--ink)}
+.pro-stat span{color:var(--muted);font-size:13px}
+.pro-section{padding:56px 0;border-bottom:1px solid var(--line)}
+.pro-section h2{font-size:clamp(26px,3vw,34px)}
+.pro-kicker{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--teal);text-transform:uppercase;margin-bottom:8px}
+.pro-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.pro-card p{color:var(--muted);margin:8px 0 0}
+.pro-card h3{font-size:18px}
+.pro-num{font-size:13px;font-weight:800;color:var(--teal)}
+.pro-note{border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:16px 18px;background:var(--surface);color:var(--muted)}
+.pro-price{font-size:26px;font-weight:800;color:var(--ink);margin:6px 0}
+.pro-price-dark{font-size:26px;font-weight:800;color:#fff;margin:6px 0}
+.pro-footer{padding:28px 0 40px;color:var(--muted);font-size:14px}
+.pro-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
